@@ -68,19 +68,25 @@ log.fatal({ a : 1 }, 'Fatal')
 
 ## Fields ##
 
-| Field | Description | From |
-|-------+------+------+
-| hostname | hostname of this machine | generated at startup |
-| pid   | process id of this process | generated at startup |
-| name  | the name of this logger | provided at logger instance creation |
-| type | message type (trace, debug, info, warn, error, fatal) | set for each log line |
-| level | numeric level (1-6) | set for each log line |
-| ts    | the timestamp | generated each log line |
-| msg   | provided for each log line |
-| data  | for each log line (if provided) |
+```
++----------+----------------------------+--------------------------------------+
+| Field    | Description                | From                                 |
++----------+----------------------------+--------------------------------------+
+| hostname | hostname of this machine   | generated at startup                 |
+| pid      | process id of this process | generated at startup                 |
+| name     | the name of this logger    | provided at logger instance creation |
+| type     | message type (see below)   | set for each log line                |
+| level    | numeric level (1-6)        | set for each log line                |
+| ts       | the timestamp              | generated each log line              |
+| msg      | the message iteself        | provided for each log line           |
+| data     | any data to log            | for each log line (if provided)      |
++----------+----------------------------+--------------------------------------+
+```
 
 ## Log Levels ##
 
+```
++-------+-------+
 | Type  | Level |
 +-------+-------+
 | trace |   1   |
@@ -89,6 +95,8 @@ log.fatal({ a : 1 }, 'Fatal')
 | warn  |   4   |
 | error |   5   |
 | fatal |   6   |
++-------+-------+
+```
 
 Note: In each log line both `type` and `level` are output and always correspond to each other.
 

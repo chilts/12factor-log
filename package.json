@@ -1,8 +1,23 @@
 {
   "name": "12factor-log",
-  "version": "0.1.0",
   "description": "Simple log infrastructure.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/chilts/12factor-log",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository"   : {
+    "type" : "git",
+    "url"  : "git://github.com/chilts/12factor-log.git"
+  },
+  "bugs" : {
+    "url": "http://github.com/chilts/12factor-log/issues",
+    "mail": "andychilton@gmail.com"
+  },
+  "licenses" : [{
+    "type": "MIT",
+    "url": "http://chilts.mit-license.org/2014/"
+  }],
+  "keywords": [ "log", "stdout", "12factor" ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
