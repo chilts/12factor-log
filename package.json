@@ -1,0 +1,11 @@
+{
+  "name": "12factor-log",
+  "version": "0.1.0",
+  "description": "Simple log infrastructure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Chilton",
+  "license": "MIT"
+}
