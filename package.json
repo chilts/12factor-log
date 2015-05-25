@@ -13,10 +13,6 @@
     "url": "http://github.com/chilts/12factor-log/issues",
     "mail": "andychilton@gmail.com"
   },
-  "licenses" : [{
-    "type": "MIT",
-    "url": "http://chilts.mit-license.org/2014/"
-  }],
   "keywords": [ "log", "stdout", "12factor" ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
